@@ -5,7 +5,7 @@ SELECT name,
        (SELECT AVG(salary) FROM employees) AS avg_salary
 FROM employees;
 
--- 2. WHERE me Subquery (IN ke sath)
+-- 2. WHERE me Subquery ()
 SELECT name, department_id
 FROM employees
 WHERE department_id IN (SELECT id FROM departments WHERE location = 'Delhi');
